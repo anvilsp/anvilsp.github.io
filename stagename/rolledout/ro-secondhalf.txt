@@ -240,7 +240,7 @@ om
 scopic
 _Perch
 walk
-bsticles
+bstacles
 array
 ing
 s
