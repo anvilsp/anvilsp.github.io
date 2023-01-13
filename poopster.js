@@ -69,6 +69,12 @@ async function generateOopster() { // do all of the randomization stuff. javascr
 }
 
 window.onload = function(){
+
+    generateOopster().then(result => {
+        document.getElementById("oopsResult").innerHTML = result;
+        document.getElementById("oopsOriginal").innerHTML =  fullStage1.concat(" and ".concat(fullStage2));
+    });
+    
     document.getElementById("makeOopster").onclick = function(){ // click generate button to generate the oopsie
         generateOopster().then(result => {
             document.getElementById("oopsResult").innerHTML = result;
